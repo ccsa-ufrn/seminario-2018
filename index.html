@@ -9,6 +9,7 @@
     <meta name="author" content="CCSA">
     <title>23º Seminário de Pesquisa do CCSA</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
     <!-- build:css -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -16,7 +17,42 @@
   </head>
 
   <body>
-    <div class="cloud-container">
+    <nav id="mainHeader" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/"><div id="marca-nav-bg"></div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">notícias</a>
+          </li>
+          <li class="nav-item d-none d-lg-block"><a class="nav-link">|</a></li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/grupos">grupos</a>
+          </li>
+          <li class="nav-item d-none d-lg-block"><a class="nav-link">|</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/files/XXIII SPCCSA modelos.zip">modelos</a>
+          </li>
+          <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link">|</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">atividades</a>
+          </li>
+          <li class="nav-item d-none d-lg-block"><a class="nav-link">|</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contato</a>
+          </li> -->
+          <li class="nav-item d-block d-lg-none">
+            <a href="http://sigeva.ccsa.ufrn.br/login" class="btn btn-danger">Entrar</a>
+          </li>
+        </ul>
+      </div>
+      <span class="d-none d-lg-block">
+        <a href="http://sigeva.ccsa.ufrn.br/login" class="btn btn-danger">Entrar</a>
+      </span>
+    </nav>
+    <div class="cloud-container" id="welcomeScreen">
       <div id="blue-ball-bg"></div>
       <div id="red-ball-bg"></div>
       <div id="yellow-ball-bg"></div>
@@ -25,9 +61,35 @@
       </div>
       <div id="event-date-bg"></div>
     </div>
-    <div class="cloud-container">
-        próxima tela
+    <!-- INSCRIPTION -->
+    <div class="cloud-container content" id="inscriptionScreen">
+      <div id="inscriptionLink" class="col-lg-7 offset-lg-4">
+        <a href="/inscricao">Inscrições</a>
+      </div>
     </div>
+    <!-- END INSCRIPTION -->
+    <!-- RULES -->
+    <div class="cloud-container content" id="rulesScreen">
+      <div id="rulesLink" class="col-lg-7 offset-lg-1">
+        <a href="/files/normas.pdf" target="_blank">Normas</a>
+      </div>
+    </div>
+    <!-- END RULES -->
+    <!-- FOOTER -->
+    <div id="footer">
+      <div class="content">
+        <div class="col-md-12">
+          <h5>Realização:</h5>
+          <div class="col-lg-3 col-sm-8">
+            <img src="/assets/img/ufrn-ccsa.png" class="img-responsive" width="100%" />
+          </div>
+        </div>
+        <div class="col-md-12" id="bar">
+            ISSN 1808 6381 <span style="float: right;">ASSCOM CCSA & ATCCSA</span>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
     <!-- build:js -->
     <script src="assets/js/main.js"></script>
      <!-- endbuild -->
